@@ -1,73 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>NetDesign Consulting (PTY) LTD</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetDesign Consulting (Pty) Ltd</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
 </head>
-
 <body>
 
-<header>
-    <!-- LOGO -->
-    <img src="images/logo.png" alt="NetDesign Logo">
-    <h1>NetDesign Consulting (PTY) LTD</h1>
-    <p>Innovative Network & IT Solutions</p>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section class="hero">
-    <h2>Reliable IT & Network Solutions</h2>
-    <p>We design, implement, and support modern network infrastructures.</p>
-</section>
-
-<section class="container" id="services">
-    <h2>Our Services</h2>
-
-    <div class="services">
-
-        <div class="card">
-            <img src="images/network.jpg" alt="Network Design">
-            <h3>Network Design</h3>
-            <p>Custom network solutions tailored to your business needs.</p>
+    <header>
+        <div class="logo">
+            <h1>NetDesign Consulting</h1>
+            <img src="logo.png" alt="NetDesign Logo">
         </div>
 
-        <div class="card">
-            <img src="images/wifi.jpg" alt="WiFi Installation">
-            <h3>Wi-Fi Installation</h3>
-            <p>Professional Wi-Fi setup for homes and businesses.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Professional IT & Network Solutions</h2>
+            <p>
+                We provide innovative web design, networking,
+                cybersecurity, and IT consulting solutions for businesses.
+            </p>
+
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <i class="fas fa-globe"></i>
+                <h3>Web Design</h3>
+                <p>
+                    Modern, responsive and user-friendly websites for your business.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="network.jpeg" alt="Network Setup">
+                <i class="fas fa-network-wired"></i>
+                <h3>Network Setup</h3>
+                <p>
+                    Professional network installation and maintenance solutions.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="security.jpeg" alt="security">
+                <i class="fas fa-shield-halved"></i>
+                <h3>Cyber Security</h3>
+                <p>
+                    Protect your systems and business data from cyber threats.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="support.jpeg" alt="Cloud Solutions">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Solutions</h3>
+                <p>
+                    Secure cloud migration and cloud-based infrastructure services.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="support(2).jpeg" alt="Company Office">
         </div>
 
-        <div class="card">
-            <img src="images/support.jpg" alt="IT Support">
-            <h3>IT Support</h3>
-            <p>Reliable maintenance and technical support services.</p>
+        <div class="about-content">
+            <h2>About Us</h2>
+
+            <p>
+                NetDesign Consulting (Pty) Ltd is a professional IT consulting
+                company focused on delivering high-quality technology solutions.
+            </p>
+
+            <p>
+                Our mission is to help businesses grow through reliable
+                networking, web development, and IT support services.
+            </p>
+
+            <a href="#" class="btn">Learn More</a>
         </div>
 
-        <div class="card">
-            <img src="images/security.jpg" alt="Security Solutions">
-            <h3>Security Solutions</h3>
-            <p>Protect your systems with advanced security configurations.</p>
-        </div>
+    </section>
+
+    <section class="team" id="team">
+
+        <h2 class="section-title">Our Team</h2>
+
+        <div class="team-container">
+
+            <div class="team-card">
+                <img src="images/team1.jpg" alt="Team Member">
+                <h3>Sibusiso Ndhabambi</h3>
+                <p>Network Engineer</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/team2.jpg" alt="Team Member">
+                <h3>Ryan Letwaba</h3>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/team3.jpg" alt="Team Member">
+                <h3>Nkateko Ndhabambi</h3>
+                <p>Cyber Security Analyst</p>
+            </div>
 
         </div>
-</section>
 
-<section class="container" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@netdesign.co.za</p>
-    <p>Phone: +27 84 818 0029</p>
-    <p>Location: 1494 Roosevelt Street, Alexandra, Johannesburg, South Africa</p>
-</section>
 
-<footer>
-    <p>&copy; NetDesign Consulting (PTY) LTD</p>
-</footer>
+    <p>         Email: info@netdesign.co.za  Phone: +27 84 818 0029  Location: 1494 Roosevelt Street, Alexandra, Johannesburg, South Africa</p>
+    
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Contact Us</h2>
+        
+        <div class="contact-container">
+    
+
+            <form>
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <textarea rows="6" placeholder="Your Message"></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 NetDesign Consulting (Pty) Ltd. All Rights Reserved.
+        </p>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
