@@ -26,8 +26,12 @@ header{
 }
 
 .logo h1{
-    font-size:28px;
+    font-size:40px;
     color:#00b4d8;
+}
+
+.logo img{
+    width:120px;
 }
 
 nav ul{
@@ -47,7 +51,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color:#00b4d8;
+    text-decoration: underline;
 }
 
 .hero{
@@ -76,7 +80,6 @@ nav ul li a:hover{
     max: width 700px;
 }
 
-/* Buttons */
 .btn{
     display:inline-block;
     background:#00b4d8;
@@ -94,7 +97,6 @@ nav ul li a:hover{
     background:#0077b6;
 }
 
-/* Section Titles */
 .section-title{
     text-align:center;
     font-size:40px;
@@ -102,7 +104,6 @@ nav ul li a:hover{
     color:#0d1b2a;
 }
 
-/* Services */
 .services{
     padding:80px 8%;
     background:white;
@@ -110,13 +111,13 @@ nav ul li a:hover{
 
 .service-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+    gap:25px;
 }
 
 .service-card{
     background:#f8f9fa;
-    padding:40px 25px;
+    padding:20px 10px;
     text-align:center;
     border-radius:10px;
     transition:0.4s;
@@ -138,7 +139,6 @@ nav ul li a:hover{
     color:#0d1b2a;
 }
 
-/* About */
 .about{
     display:flex;
     flex-wrap:wrap;
@@ -215,7 +215,6 @@ nav ul li a:hover{
 form{
     display:flex;
     flex-direction:column;
-    text-align: centre;
 }
 
 form input,
