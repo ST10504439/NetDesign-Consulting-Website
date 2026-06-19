@@ -139,6 +139,48 @@ nav ul li a:hover{
     color:#0d1b2a;
 }
 
+.services-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services-search, #services-sort {
+    padding: 12px 20px;
+    border: 2px solid #eef3f8;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: #f8f9fa;
+    transition: 0.3s;
+}
+
+#services-search {
+    flex: 2;
+}
+
+#services-sort {
+    flex: 1;
+    cursor: pointer;
+}
+
+#services-search:focus, #services-sort:focus {
+    border-color: #00b4d8;
+    background: white;
+}
+
+@media(max-width: 768px) {
+    .services-controls {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+}
+
+
 .about{
     display:flex;
     flex-wrap:wrap;
@@ -267,5 +309,78 @@ footer{
     .about{
         flex-direction:column;
     }
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 27, 42, 0.95); 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#lightbox.active {
+    display: flex;
+    opacity: 1;
+}
+
+#lightbox img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    border: 4px solid #00b4d8; 
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+#lightbox.active img {
+    transform: scale(1);
+}
+
+.reveal-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#map {
+    height: 350px;
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    border-radius: 10px;
+    border: 2px solid #00b4d8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    z-index: 1; 
+}
+
+.leaflet-popup-content-wrapper {
+    background: #0d1b2a !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+    font-family: Arial, sans-serif;
+}
+
+.leaflet-popup-tip {
+    background: #0d1b2a !important;
+}
+
+.leaflet-popup-content b {
+    color: #00b4d8;
+}
 
 } 

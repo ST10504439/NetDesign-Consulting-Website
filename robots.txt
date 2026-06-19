@@ -1,0 +1,6 @@
+# 3.3 Robots.txt indexing crawler instruction protocols
+User-agent: *
+Allow: /
+
+# Target path structure declarations
+Sitemap: https://netdesign.co.za

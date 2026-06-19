@@ -1,11 +1,38 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NetDesign Consulting (Pty) Ltd</title>
+     <title>NetDesign Consulting | IT Support & Network Solutions Johannesburg</title>
+    <meta name="description" content="NetDesign Consulting (Pty) Ltd offers professional IT services, secure network installation, expert web design, and cyber security solutions in Johannesburg, South Africa." />
+    <meta name="keywords" content="IT consulting, Network Setup Alexandra, Web Design Johannesburg, Cyber Security South Africa, Cloud Solutions, NetDesign Consulting" />
+    <meta name="author" content="NetDesign Consulting (Pty) Ltd" />
+    
+    <!-- 3.2 Local SEO Schema Markup (JSON-LD structured data for Google Search) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ITPrivateCompany",
+      "name": "NetDesign Consulting (Pty) Ltd",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1494 Roosevelt Street, Alexandra",
+        "addressLocality": "Johannesburg",
+        "addressRegion": "Gauteng",
+        "postalCode": "2014",
+        "addressCountry": "ZA"
+      },
+      "telephone": "+27848180029",
+      "email": "info@netdesign.co.za",
+      "url": "https://netdesign.co.za"
+    }
+    </script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cloudflare.com" />
+    <link rel="stylesheet" href="https://unpkg.com" />
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -16,7 +43,7 @@
     <header>
         <div class="logo">
             <h1>NetDesign Consulting</h1>
-            <img src="logo.png" alt="NetDesign Logo">
+            <img src="logo.png" alt="NetDesign Consulting Company Logo">
         </div>
 
         <nav>
@@ -43,10 +70,19 @@
     </section>
 
     <section class="services" id="services">
+    <h2 class="section-title">Our Services</h2>
 
-        <h2 class="section-title">Our Services</h2>
+    <div class="services-controls">
+        <input type="text" id="services-search" placeholder="Search services...">
+        <select id="services-sort">
+            <option value="default">Sort by: Default</option>
+            <option value="asc">Alphabetical (A-Z)</option>
+            <option value="desc">Alphabetical (Z-A)</option>
+        </select>
+    </div>
 
-        <div class="service-container">
+    <div class="service-container" id="dynamic-services-container"></div>
+</section>
 
             <div class="service-card">
                 <i class="fas fa-globe"></i>
@@ -58,7 +94,6 @@
 
             <div class="service-card">
                 <img src="network.jpg" alt="Network Setup">
-                <i class="fas fa-network-wired"></i>
                 <h3>Network Setup</h3>
                 <p>
                     Professional network installation and maintenance solutions.
@@ -67,7 +102,6 @@
 
             <div class="service-card">
                 <img src="security.jpg" alt="security">
-                <i class="fas fa-shield-halved"></i>
                 <h3>Cyber Security</h3>
                 <p>
                     Protect your systems and business data from cyber threats.
@@ -89,7 +123,7 @@
     <section class="about" id="about">
 
         <div class="about-image">
-            <img src="support(2).jpeg" alt="Company Office">
+            <img src="Company Image.jpeg" alt="Company Office">
         </div>
 
         <div class="about-content">
@@ -134,10 +168,15 @@
                 <p>Cyber Security Analyst</p>
             </div>
 
+        <div class="direct-contact-info">
+                <p>
+                    <strong>Email:</strong> <a href="mailto:info@netdesign.co.za">info@netdesign.co.za</a> | 
+                    
+                    <strong>Phone:</strong> <a href="tel:+27848180029">+27 84 818 0029</a> | 
+                    
+                    <strong>Location:</strong> 1494 Roosevelt Street, Alexandra, Johannesburg, South Africa
+                </p>
         </div>
-
-
-    <p>         Email: info@netdesign.co.za  Phone: +27 84 818 0029  Location: 1494 Roosevelt Street, Alexandra, Johannesburg, South Africa</p>
     
     </section>
 
@@ -147,20 +186,12 @@
         
         <div class="contact-container">
     
-
-            <form>
-
-                <input type="text" placeholder="Your Name" required>
-
-                <input type="email" placeholder="Your Email" required>
-
-                <textarea rows="6" placeholder="Your Message"></textarea>
-
-                <button type="submit" class="btn">
-                    Send Message
-                </button>
-
-            </form>
+            <form id="contactForm" autocomplete="on">
+                    <input type="text" id="contactName" name="name" placeholder="Your Name" required aria-label="Your Full Name">
+                    <input type="email" id="contactEmail" name="email" placeholder="Your Email" required aria-label="Your Email Address">
+                    <textarea id="contactMessage" name="message" rows="6" placeholder="Your Message" required aria-label="Your Message Context"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
 
         </div>
 
@@ -173,18 +204,16 @@
         </p>
 
         <div class="social-icons">
-
-            <a href="#"><i class="fab fa-facebook"></i></a>
-
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-
-            <a href="#"><i class="fab fa-instagram"></i></a>
-
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit NetDesign Consulting Facebook Page"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit NetDesign Consulting LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit NetDesign Consulting Instagram Profile"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Visit NetDesign Consulting X Account"><i class="fab fa-x-twitter"></i></a>
         </div>
 
     </footer>
+
+    <script src="https://unpkg.com" defer></script>
+    <script src="script.js" defer></script>
 
 </body>
 </html>
