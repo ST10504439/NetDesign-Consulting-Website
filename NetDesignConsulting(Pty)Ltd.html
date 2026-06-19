@@ -181,21 +181,81 @@
     </section>
 
     <section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-container">
+        <form id="contactForm" action="submit_contact.php" method="POST" novalidate>
+            
+            <div class="form-group">
+                <input type="text" id="contactName" name="name" placeholder="Your Name" required minlength="2">
+                <span class="error-msg" id="nameError"></span>
+            </div>
 
-        <h2 class="section-title">Contact Us</h2>
-        
-        <div class="contact-container">
-    
-            <form id="contactForm" autocomplete="on">
-                    <input type="text" id="contactName" name="name" placeholder="Your Name" required aria-label="Your Full Name">
-                    <input type="email" id="contactEmail" name="email" placeholder="Your Email" required aria-label="Your Email Address">
-                    <textarea id="contactMessage" name="message" rows="6" placeholder="Your Message" required aria-label="Your Message Context"></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+            <div class="form-group">
+                <input type="email" id="contactEmail" name="email" placeholder="Your Email" required>
+                <span class="error-msg" id="emailError"></span>
+            </div>
 
-        </div>
+            <div class="form-group">
+                <select id="messageType" name="messageType" required>
+                    <option value="" disabled selected>Select Message Type</option>
+                    <option value="general">General Support Enquiry</option>
+                    <option value="feedback">Website Feedback</option>
+                    <option value="urgent">Urgent Business Escalation</option>
+                </select>
+                <span class="error-msg" id="typeError"></span>
+            </div>
 
+            <div class="form-group">
+                <textarea id="contactMessage" name="message" rows="6" placeholder="Your Message" required minlength="10"></textarea>
+                <span class="error-msg" id="messageError"></span>
+            </div>
+
+            <div id="formStatus" class="form-status"></div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
     </section>
+    
+    <section class="enquiry" id="enquiry">
+    <h2 class="section-title">Service Enquiry</h2>
+    <div class="contact-container">
+        <form id="enquiryForm" action="submit_enquiry.php" method="POST" novalidate>
+            
+            <div class="form-group">
+                <input type="text" id="enquiryName" name="name" placeholder="Business Name / Contact Person" required>
+                <span class="error-msg" id="enqNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" id="enquiryPhone" name="phone" placeholder="Phone Number (e.g., +27 84 818 0029)" required pattern="^(\+?\d{1,3}[- ]?)?\d{9,10}$">
+                <span class="error-msg" id="enqPhoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <select id="enquiryService" name="service" required>
+                    <option value="" disabled selected>Select Target IT Solution</option>
+                    <option value="web">Web Design & Deployment</option>
+                    <option value="network">Network Infrastructure Setup</option>
+                    <option value="cyber">Cyber Security Audit</option>
+                    <option value="cloud">Managed Cloud Systems</option>
+                </select>
+                <span class="error-msg" id="enqServiceError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiryDate" style="display:block; margin-bottom:5px; color:#0d1b2a; font-weight:bold;">Requested Implementation Date:</label>
+                <input type="date" id="enquiryDate" name="targetDate" required>
+                <span class="error-msg" id="enqDateError"></span>
+            </div>
+
+            <div id="enquiryStatus" class="form-status"></div>
+
+            <button type="submit" class="btn">Process System Enquiry</button>
+        </form>
+    </div>
+</section>
+
 
     <footer>
 
