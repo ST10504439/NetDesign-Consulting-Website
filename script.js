@@ -4,7 +4,7 @@ const servicesData = [
         title: "Web Design",
         icon: "fas fa-globe",
         description: "Modern, responsive and user-friendly websites for your business."
-    },
+    }, 
     {
         title: "Network Setup",
         icon: "fas fa-network-wired",
